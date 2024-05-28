@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #353935;
+            color: #444;
+        }
+        section {
+            background-color: #353935;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            max-width: 900px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 {
+            color: #444;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .visual-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .card {
+            width: 100%;
+            text-align: justify;
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            display: none;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .tab-content.active p {
+            display: block;
+        }
+        .tabs {
+            display: flex;
+            margin-top: 20px;
+            background-color: #444;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .tab {
+            flex: 1;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            color: #fff;
+        }
+        .tab:hover {
+            background-color: #666;
+        }
+        .tab.active {
+            background-color: #222;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tourism Visualization</h1>
+
+<div class="tabs">
+    <div class="tab active" data-tab="card1" onclick="showTab('card1')">About</div>
+    <div class="tab" data-tab="card2" onclick="showTab('card2')">Tools</div>
+    <div class="tab" data-tab="card3" onclick="showTab('card3')">Insights</div>
+    <div class="tab" data-tab="card4" onclick="showTab('card4')">Visualization</div>
+    <div class="tab" data-tab="card5" onclick="showTab('card5')">Image</div>
+</div>
+
+<section id="card1" class="tab-content active">
+    <div class="visual-content">
+        <div class="card card1">
+            <h2>About the Project</h2>
+            <p>Our tourism report looks at how many people from India went to other countries between 2014 and 2020. What we found is that more and more Indians have been traveling abroad during these years. There are a few reasons for this. One is that more people in India have money to spend on travel. Another reason is that it's become easier to go to other countries because of better flights and travel options. People also want to have new and different experiences when they travel.
+
+                We noticed a big increase in the number of Indian travelers going abroad after 2017. This shows that more Indians are interested in seeing the world beyond their own country. By looking at where people went and when they went, we can see which places were most popular and when people liked to travel the most.
+                
+                It's important to think about things like the economy, politics, and health when we talk about tourism. For example, during the COVID-19 pandemic, travel slowed down a lot because of safety concerns. Understanding how these things affect travel helps us plan better for the future and make sure people can keep enjoying traveling in a safe and sustainable way.</p>
+        </div>
+    </div>
+</section>
+
+<section id="card2" class="tab-content">
+    <div class="visual-content">
+        <div class="card card2">
+            <h2>Tools Used in Project: HTML, CSS, and IBM Cognos</h2>
+            <p><h3>Introduction:</h3>
+            For our project, we utilized a combination of HTML, CSS, and IBM Cognos for creating a comprehensive and visually appealing solution. Each tool played a crucial role in different aspects of the project, contributing to its success in various ways.
+
+            <h3>HTML and CSS:</h3>
+            HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) formed the backbone of our project's frontend development. HTML provided the structure and content of our web pages, while CSS was used for styling and presentation. Together, they allowed us to create a user-friendly and responsive interface that enhanced the overall user experience.
+
+            With HTML, we organized our content into meaningful sections, ensuring clarity and readability for users interacting with our project. CSS then allowed us to customize the visual appearance of these elements, including colors, fonts, layouts, and animations. By leveraging the power of CSS, we were able to create a visually appealing design that aligned with our project's objectives and branding guidelines.
+
+           <h3> IBM Cognos:</h3>
+            IBM Cognos served as our primary tool for data visualization and analytics. With its robust features and capabilities, IBM Cognos enabled us to transform raw data into actionable insights and compelling visualizations. We leveraged its intuitive interface to create interactive dashboards, reports, and charts that provided stakeholders with valuable information and decision-making support.
+
+            One of the key advantages of using IBM Cognos was its ability to handle large datasets and perform advanced analytics, allowing us to uncover trends, patterns, and correlations within our data. Additionally, its scalability and integration capabilities ensured seamless collaboration and data sharing across our project team.</p>
+        </div>
+    </div>
+</section>
+
+<section id="card3" class="tab-content">
+    <div class="visual-content">
+        <div class="card card3">
+            <h2>Insights of Visualization</h2>
+            <p><h3>Tourism Visualization Report</h3>
+
+                <h4>2014: India to Canada</h4>
+                
+                <h5>Visualization: Bubble Circle Chart</h5>
+                <h5>Description:</h5> This visualization presents the number of travelers from India to Canada in 2014. The Bubble Circle Chart showcases the volume of travelers with larger bubbles representing higher numbers of travelers. This visualization offers a clear depiction of the flow of tourists from India to Canada during the specified year.
+                2015: India to France
+                
+               <h5>Visualization: Waterfall Chart</h5> 
+                <h5>Description:</h5> The Waterfall Chart illustrates the tourism flow from India to France in 2015. It provides a comprehensive view of the travel trends, showcasing both the inbound and outbound tourist movements between the two countries. This visualization aids in understanding the dynamics of tourism between India and France during the specified year.
+                2016: India Travel Trend
+                
+                <h5>Visualization: Bar Plot with Line Chart</h5>
+                <h5>Description:</h5> This visualization combines a Bar Plot and a Line Chart to depict the travel trend from India in 2016. The Bar Plot represents the total number of travelers, while the Line Chart illustrates the trend over time. This visualization provides insights into the overall travel pattern from India and highlights any fluctuations or trends in tourism during the specified year.
+                2017: India Travel Destinations
+                
+                <h5>Visualization: Horizontal Bar Plot</h5>
+                <h5>Description:</h5> The Horizontal Bar Plot displays the top destinations for Indian travelers in 2017. It showcases the most popular tourist destinations visited by travelers from India during the specified year. This visualization offers valuable insights into the preferred travel destinations of Indian tourists and helps in understanding travel preferences and trends.
+                2020: India Outbound Tourism
+                
+                <h5>Visualization: Pie Chart</h5>
+                <h5>Description:</h5> The Pie Chart represents the distribution of Indian outbound tourism in 2020 across different countries. It provides a visual breakdown of the proportion of tourists traveling to various destinations from India during the specified year. This visualization offers insights into the distribution of Indian travelers and highlights the popularity of different tourist destinations among Indian tourists.</p>
+        </div>
+    </div>
+</section>
+
+<section id="card4" class="tab-content">
+    <div class="visual-content">
+        <div class="card card4">
+            <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FNew%2Bdashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018fb008e550_00000002" width="500" height="400" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</section>
+
+<section id="card5" class="tab-content">
+    <div class="visual-content">
+        <div class="card card5">
+            <img src="img.png">
+        </div>
+    </div>
+</section>
+
+
+<script>
+    function showTab(tabId) {
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        
+        tabContents.forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        document.getElementById(tabId).classList.add('active');
+        document.querySelector(`.tab[data-tab="${tabId}"]`).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
